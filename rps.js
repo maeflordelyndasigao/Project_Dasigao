@@ -22,7 +22,7 @@ function playGame(playerChoice) {
   }
 
   document.getElementById("result").innerText =
-    `You choOse ${playerChoice}, computer choOse ${computerChoice}. ${resultText}`;
+    `You choose ${playerChoice}, computer choose ${computerChoice}. ${resultText}`;
 
   document.getElementById("score").innerText =
     `PLAYER: ${playerScore} | COMPUTER: ${computerScore}`;
