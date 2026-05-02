@@ -2,8 +2,8 @@ body {
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   text-align: center;
-  background: #db58ffee;
-  margin-top: 50px;
+  background: #84bef8;
+  margin-top: 150px;
 }
 
 h1 {
@@ -23,12 +23,12 @@ h1 {
 }
 
 .choices button:hover {
-  background: #2980b9;
+  background: #620ff1;
 }
 
 .result {
-  margin-top: 50px;
-  font-size: 50px;
+  margin-top: 30px;
+  font-size: 20px;
 }
 
 .score {
