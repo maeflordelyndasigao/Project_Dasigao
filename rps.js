@@ -16,10 +16,10 @@ function playGame(playerChoice) {
     (playerChoice === 'paper' && computerChoice === 'rock') ||
     (playerChoice === 'scissors' && computerChoice === 'paper')
   ) {
-    resultText = "You win!";
+    resultText = "YOU WIN!";
     playerScore++;
   } else {
-    resultText = "You lose!";
+    resultText = "YOU LOSE!";
     computerScore++;
   }
 
