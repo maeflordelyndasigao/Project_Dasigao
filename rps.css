@@ -10,20 +10,20 @@ h1 {
     margin-bottom: 20px;
 }
 
-.choices button {
+button {
   padding: 15px 25px;
   margin: 10px;
-  font-size: 50px;
+  font-size: 30px;
   cursor: pointer;
   border: none;
-  border-radius: 8px;
-  background: #aa62fd;
-  color: rgb(204, 120, 253);
+  border-radius: 50px;
+  background: #bd89f8;
+  color: rgb(0, 0, 0);
   transition: 0.3s;
 }
 
-.choices button:hover {
-  background: #000000;
+button:hover {
+  background: #83b7fa;
 }
 
 .result {
