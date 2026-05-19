@@ -137,3 +137,11 @@ h1 {
     padding: 15px;
     box-sizing: border-box;
 }
+
+.matchup-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 2rem;
+}
