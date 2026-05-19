@@ -145,3 +145,10 @@ h1 {
     gap: 15px;
     font-size: 2rem;
 }
+
+.vs-small {
+    font-size: 0.8rem;
+    color: #64748b;
+    text-transform: lowercase;
+    font-weight: normal;
+}
