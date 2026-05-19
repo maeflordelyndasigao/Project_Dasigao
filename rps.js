@@ -6,35 +6,46 @@ function playGame(playerChoice) {
     const computerChoice = choices[Math.floor(Math.random() * 3)];
     const resultDisplay = document.getElementById("result");
     
+    // Object mapping to translate text choices into visual emojis
     const emojiMap = {
         'rock': '👊',
         'paper': '✋',
         'scissors': '✌️'
     };
 
-    let resultText = "";
+    let roundVerdict = "";
     let color = "#f8fafc"; // Default white
 
+    // 1. Determine Win/Loss/Draw Status
     if (playerChoice === computerChoice) {
-        resultText = "IT'S A DRAW!";
+        roundVerdict = "IT'S A DRAW!";
         color = "#94a3b8"; // Grey
     } else if (
         (playerChoice === 'rock' && computerChoice === 'scissors') ||
         (playerChoice === 'paper' && computerChoice === 'rock') ||
         (playerChoice === 'scissors' && computerChoice === 'paper')
     ) {
-        resultText = "YOU WIN! 🔥";
+        roundVerdict = "YOU WIN! 🔥";
         playerScore++;
         color = "#4ade80"; // Green
     } else {
-        resultText = "COMPUTER WINS 💀";
+        roundVerdict = "YOU LOSE! 💀";
         computerScore++;
         color = "#f87171"; // Red
     }
 
-    resultDisplay.style.color = color;
-    resultDisplay.innerText = resultText;
+    // 2. NEW: Structure text to show choices alongside the verdict
+    // Breaks layout cleanly into: "Your Emoji vs Computer Emoji" over the text status
+    resultDisplay.innerHTML = `
+        <div class="matchup-visual">
+            <span>${emojiMap[playerChoice]}</span> 
+            <span class="vs-small">vs</span> 
+            <span>${emojiMap[computerChoice]}</span>
+        </div>
+        <div style="color: ${color}; margin-top: 8px;">${roundVerdict}</div>
+    `;
 
+    // 3. Update core score counters
     document.getElementById("player-score").innerText = playerScore;
     document.getElementById("computer-score").innerText = computerScore;
 }
@@ -42,11 +53,12 @@ function playGame(playerChoice) {
 function restartGame() {
     playerScore = 0;
     computerScore = 0;
-
     const resultDisplay = document.getElementById("result");
-    resultDisplay.innerText = "READY?";
-    resultDisplay.style.color = "#f8fafc"; 
-
+    
+    // Restores structural defaults safely
+    resultDisplay.innerHTML = "READY?";
+    resultDisplay.style.color = "#f8fafc";
+    
     document.getElementById("player-score").innerText = playerScore;
     document.getElementById("computer-score").innerText = computerScore;
 }
