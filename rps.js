@@ -6,6 +6,12 @@ function playGame(playerChoice) {
     const computerChoice = choices[Math.floor(Math.random() * 3)];
     const resultDisplay = document.getElementById("result");
     
+    const emojiMap = {
+        'rock': '👊',
+        'paper': '✋',
+        'scissors': '✌️'
+    };
+
     let resultText = "";
     let color = "#f8fafc"; // Default white
 
