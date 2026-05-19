@@ -34,3 +34,19 @@ function playGame(playerChoice) {
     document.getElementById("player-score").innerText = playerScore;
     document.getElementById("computer-score").innerText = computerScore;
 }
+
+// NEW: Reset Game State Logic
+function restartGame() {
+    // 1. Wipe state variables back to initial values
+    playerScore = 0;
+    computerScore = 0;
+
+    // 2. Clear out display nodes cleanly
+    const resultDisplay = document.getElementById("result");
+    resultDisplay.innerText = "READY?";
+    resultDisplay.style.color = "#f8fafc"; // Back to default white text
+
+    // 3. Force updated zeros to sync directly to viewport counters
+    document.getElementById("player-score").innerText = playerScore;
+    document.getElementById("computer-score").innerText = computerScore;
+}
