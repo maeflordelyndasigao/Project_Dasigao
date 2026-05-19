@@ -104,3 +104,30 @@ h1 {
 .choice-btn:active {
     transform: scale(0.95);
 }
+
+/* Modern Reset Button Styling */
+#restart-btn {
+    margin-top: 30px;
+    background: transparent;
+    border: 2px dashed #64748b;
+    color: #94a3b8;
+    padding: 12px 30px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.2s ease;
+}
+
+#restart-btn:hover {
+    border-style: solid;
+    border-color: #f87171; /* Accent red glow on hover */
+    color: #f8fafc;
+    background: rgba(248, 113, 113, 0.1);
+    transform: translateY(-2px);
+}
+
+#restart-btn:active {
+    transform: translateY(0);
+}
