@@ -17,7 +17,7 @@ function playGame(playerChoice) {
 
     if (playerChoice === computerChoice) {
         roundVerdict = "IT'S A DRAW!";
-        color = "#94a3b8"; 
+        color = "#131414"; 
     } else if (
         (playerChoice === 'rock' && computerChoice === 'scissors') ||
         (playerChoice === 'paper' && computerChoice === 'rock') ||
