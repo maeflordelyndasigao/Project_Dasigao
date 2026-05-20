@@ -25,11 +25,11 @@ function playGame(playerChoice) {
     ) {
         roundVerdict = "YOU WIN! 🔥";
         playerScore++;
-        color = "#4ade80"; 
+        color = "#0fa345"; 
     } else {
         roundVerdict = "YOU LOSE! 💀";
         computerScore++;
-        color = "#f87171";
+        color = "#ec1d1d";
     }
 
     resultDisplay.innerHTML = `
