@@ -38,7 +38,7 @@ function playGame(playerChoice) {
         <div class="matchup-visual">
             <span>${emojiMap[playerChoice]}</span> 
             <span class="vs-small">vs</span> 
-            <span class="vs-small">${emojiMap[computerChoice]}</span>
+            <span>${emojiMap[computerChoice]}</span>
         </div>
         <div style="color: ${color}; margin-top: 8px;">${roundVerdict}</div>
     `;
