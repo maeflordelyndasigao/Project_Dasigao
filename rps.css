@@ -30,7 +30,6 @@ h1 {
 
 .vs { color: #38bdf8; }
 
-/* Scoreboard Styling */
 .scoreboard {
     display: flex;
     justify-content: space-around;
