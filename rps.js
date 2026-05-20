@@ -51,7 +51,7 @@ function restartGame() {
     const resultDisplay = document.getElementById("result");
 
     resultDisplay.innerHTML = "READY?";
-    resultDisplay.style.color = "#f8fafc";
+    resultDisplay.style.color = "#ffffff";
     
     document.getElementById("player-score").innerText = playerScore;
     document.getElementById("computer-score").innerText = computerScore;
