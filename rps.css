@@ -48,7 +48,6 @@ h1 {
     color: #38bdf8;
 }
 
-/* The Battle Area */
 .battle-field {
     height: 100px;
     display: flex;
@@ -65,7 +64,6 @@ h1 {
     text-transform: uppercase;
 }
 
-/* Modern Buttons */
 .controls {
     display: flex;
     justify-content: center;
@@ -103,7 +101,6 @@ h1 {
     transform: scale(0.95);
 }
 
-/* Modern Reset Button Styling */
 #restart-btn {
     margin-top: 30px;
     background: transparent;
