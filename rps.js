@@ -1,6 +1,5 @@
 let playerScore = 0;
 let computerScore = 0;
-let drawScore = 0;
 
 function playGame(playerChoice) {
     const choices = ['rock', 'paper', 'scissors'];
@@ -18,7 +17,6 @@ function playGame(playerChoice) {
 
     if (playerChoice === computerChoice) {
         roundVerdict = "IT'S A DRAW!";
-        drawScore++;
         color = "#131414"; 
     } else if (
         (playerChoice === 'rock' && computerChoice === 'scissors') ||
@@ -45,13 +43,11 @@ function playGame(playerChoice) {
 
     document.getElementById("player-score").innerText = playerScore;
     document.getElementById("computer-score").innerText = computerScore;
-    document.getElementById("draw-score").innerText = drawScore;
 }
 
 function restartGame() {
     playerScore = 0;
     computerScore = 0;
-    drawScore = 0;
     const resultDisplay = document.getElementById("result");
 
     resultDisplay.innerHTML = "READY?";
@@ -59,5 +55,4 @@ function restartGame() {
     
     document.getElementById("player-score").innerText = playerScore;
     document.getElementById("computer-score").innerText = computerScore;
-    document.getElementById("draw-score").innerText = drawScore;
 }
